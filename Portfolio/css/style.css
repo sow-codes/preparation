@@ -1,0 +1,347 @@
+/* 
+importing fonts from google fonts 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    line-height:1.5; 
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --primary-color:black;  /*  background color(body) */
+    --secondary-color:white;  /*  text colour */
+}
+/*this is accessed in script tag*/
+.white-theme{
+    --primary-color:white;  
+    --secondary-color:black;
+}
+body{
+    text-align:center;   
+    font-family: 'Josefin Sans', sans-serif; 
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    margin: 0 5% 0; /* 0 refers top,5% refers right and left,0% refers bottom*/
+} 
+a{
+    text-decoration: none; /*because default a tag has properties of underline and color change on visited*/
+    color: var(--secondary-color);
+}
+header { 
+    font-family: 'Kaushan Script', cursive;
+    height:auto;
+    width: 100%; 
+    text-align: right; 
+    animation: header 1.5s ease-in-out;
+}
+@keyframes header {
+    0%{
+        transform: translateY(-100%);
+    }
+    
+}
+header .portfolio{
+    padding-left: 0;
+    padding-top: 20px;
+    font-size:2rem; /* r means root.em has no abbreviation.rem unit is most recommended because this makes website responsive. rem units work according to screen size*/
+    float: left;
+}
+header .portfolio span{
+    color:#f9004d;
+}
+header ul li { 
+    font-size: 22px;
+    padding:20px;
+    display: inline-flex; 
+    transition: transform .4s;
+}
+header ul li:hover{
+    color:#f9004d;
+    transform:scale(1.2);
+} 
+/* id should be accessed as # */
+.fa-solid fa-bars{
+    display: none;
+}
+#icon{
+    width:30px;
+    cursor: pointer;
+}
+.top-container{ 
+    height:auto;
+    width:100%; 
+} 
+.effect{
+    position: absolute; /* by using absolute,you can place thing anywhere on screen*/
+}
+.effect-1{
+    width: 150px;
+    height:150px;
+    border:20px solid #f9004d;
+    border-radius: 50%;
+    top:-100px;
+    left:30%;
+    animation:leftbounce 4s linear infinite;
+}
+@keyframes leftbounce{
+    0%,100%{
+      transform:translateX(0);
+    }
+    50%{
+        transform:translateX(30px);
+    }
+}
+.effect-2{
+    width:45px;
+    height:45px;
+    display: flex;
+    justify-content: space-between;
+    right:4%;
+    bottom:30%;
+    border-radius: 50%;
+    overflow-y: hidden;
+    animation:spin 9s linear infinite;
+}
+.effect-2 div{
+    width: 1px;
+    border: .2px solid #FFAA4C;
+  
+}
+@keyframes spin{
+    0%{
+    transform:rotate(0deg);
+}
+    100%{
+    transform:rotate(390deg);
+}
+
+}
+.profile{ 
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    float: left;
+    padding: 100px 0 0 30px;
+    transition:transform .5s;
+}
+.profile:hover{
+    transform:scale(1.2)
+}
+.name{ 
+    width:100%;
+    font-size: 2.5rem; 
+    font-family: 'Kaushan Script', cursive;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 10rem;
+    animation: name 1.5s ease-out;
+}
+@keyframes name{
+    0%{
+        transform:translateX(150%) ;
+    }
+}
+h6{  
+    font-family: 'Kaushan Script', cursive;
+}
+p{   
+    margin-top: 20px; 
+    color: var(--secondary-color);
+} 
+.description{
+    text-align: center;
+    margin-top: 30px; 
+    animation:namebounce 4s linear infinite;
+}
+@keyframes namebounce{
+    0%,100%{
+      transform:translateX(0);
+    }
+    50%{
+        transform:translateX(70px);
+    }
+}
+
+.name span{
+    font-size: 6rem;
+}
+.name .span1{
+    font-size: 6rem;
+    color:#f9004d;
+}
+
+.name .span2{
+    color:#f9004d;
+    font-size: 4rem;
+}
+
+h3{  
+    font-family: 'Josefin Sans', sans-serif; 
+    color:#f9004d;
+    text-align: center;
+}   
+.box{
+    font-size:1.5rem; 
+    width:50%;
+    margin:80px auto 80px auto; /* top right bottom left (clockwise)*/
+  
+} 
+.image{ 
+    height: 200px;
+    width: 200px;
+    border-radius: 300px;
+    margin: 20px auto;
+}
+.skills-section{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin: 25px auto;
+    width:30%;
+    border-radius: 15px;
+    border: .5px solid rgb(110, 110, 110);
+    box-shadow: 10px 10px 4px #F8485E;  
+} 
+.skills-section .html, .C, .java, .js{
+    font-size:1.5rem;
+    padding: 25px;
+}
+.info{
+    height:10px;
+    border-radius: 20px;
+    margin: 7px;
+    box-shadow: 0px 3px .5px #f79bd0,
+                0px -3px .5px  #f79bd0;
+}
+.info span{
+    float:left; 
+    height:10px;
+    background-color:#f7195f;
+    border-radius: 20px;
+}
+.percent{
+    font-size: 15px;
+    float: right;
+}
+.html .info span{
+    width:85%;
+    animation:toright1 1.5s linear  ;
+}
+.C .info span{
+    width:75%;
+    animation:toright2 1.5s linear ;
+}
+.java .info span{
+    width:65%;
+    animation:toright3 1.5s linear ;
+}
+.js .info span{
+    width:80%;
+    animation:toright4 1.5s linear;
+}
+
+
+@keyframes toright1{
+    from{
+        width:0%
+    }
+    to{
+        width:93%
+    }
+}
+@keyframes toright2{
+    from{
+        width:0%
+    }
+    to{
+        width:75%
+    }
+}
+@keyframes toright3{
+    from{
+        width:0%
+    }
+    to{
+        width:65%
+    }
+}
+@keyframes toright4{
+    from{
+        width:0%
+    }
+    to{
+        width:80%
+    }
+}
+.content{
+    margin:40px auto 40px auto;
+}
+.button { 
+    background:#f9004d;
+    border-radius: 65px;
+    color: var(--primary-color);
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px 15px; 
+    transition-property:transform  .8s;
+}
+.button:hover {
+    transform :scale(1.0);
+    background:var(--secondary-color);
+    color:#f9004d;
+} 
+.footer{
+    height: auto;
+    width:100%;
+    border-top: .1px solid var(--secondary-color);
+}
+.footer i{
+    height:45px;
+    width: 45px; 
+    display:inline-block;
+    margin: 60px 20px 30px 20px;
+    font-size: 25px;
+    color: rgb(223, 221, 221);
+    border-radius: 25px;
+    text-align:center; 
+    padding:10px; 
+    transition-property: transform .15s;
+} 
+.ln{
+    background: rgb(11, 94, 248);
+}
+.twtr{
+    background: rgb(2, 167, 167);
+}.fb{
+    background: rgb(11, 94, 248);
+}
+.insta{
+    background: #cc0e74;
+}
+.gmail{
+    background: #e40017;
+} 
+.footer i:hover{
+    background: white;
+    color:blue;
+    transform:rotate(360deg) scale(1.3);
+    transition-duration: 1.5s;
+} 
+.insta:hover{
+    background: white;
+    color:#cc0e74;
+} 
+.gmail:hover{
+    background: white; 
+    color:#e40017;
+}
+#copyright{
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+} 
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>SOWMIYA PORTFOLIO </title>
+        <!-- linking css file   rel=relationship   href=hypertext refernce -->
+        <link  rel="stylesheet" href="css/style.css"> 
+        <!--to use icons-->
+        <link rel="icon" href="favicon.ico">
+
+        <link  rel="stylesheet" href="css/mediaquery.css">
+
+        <script src="https://kit.fontawesome.com/8484b284df.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h2 class="portfolio">Portfo<span>lio</span></h2>
+
+            <div class="effect effect-1"></div>
+
+             <b><ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li> <img src="images/sun.png" id="icon"></img></li>
+            </ul> </b>
+
+        </header>
+
+
+        <div id="home" class="top-container">
+
+        <div>
+            <img class="profile" src="./images/circle-cropped 1.png" alt="image"/> <!-- in src ./ not compulsary-->
+        </div>
+
+        <div class="name">
+            <h6><em><span >I'</span>m<span class="span1"> S</span><span class="span2">owmiya</span></em></h6>
+            <p class="description"><!-- <em><marquee height="100px" direction="down">--> A Web designer & developer</></em></p> <!--marquee tag moves the text-->
+        </div>
+
+        <div class="effect effect-2">
+            <div></div>  <div></div>  <div></div> <div></div>  <div></div> <div></div> <div></div>  <div></div>  <div></div> <div></div> <div></div>
+        </div>
+
+        </div>
+
+     <div id="about" class="middle-container">
+
+         <div class="box">
+         <h3>Hello.</h3>
+        <p ><em><strong>I'm a web designer/developer based in India. I have a passion for web development and love to create for web and mobile devices.</strong></em></p>
+        </div>
+
+        <div  class="box">
+            <img class="image" src="images/animated3.jpg" alt="panda2-img">
+            <h3>What I really do.</h3>
+            <p><em><strong>I like to keep it simple.<br>I can design your site as per your convenient and user-friendly. Iam high on typography,content and designing the site.</strong></em></p>
+        </div>
+
+
+        <h3>My Skills</h3>
+
+        <div id="skills" class="skills-section">
+
+            <div class="bar html">
+                <div class="head1"><span >Html & Css</span><span class="percent">85%</span>
+                </div>
+                <div class="info"><span></span> <!-- this div creates border of bar and span is the color inside bar-->
+                </div>
+            </div>
+
+            <div class="bar C">
+                <div class="head2"><span >C</span> <span class="percent">75%</span>
+                </div>
+                <div class="info"><span></span></div>
+            </div>
+
+            <div class="bar java">
+                <div class="head3"><span >Java</span><span class="percent">65%</span>
+                </div>
+                <div class="info"><span></span>
+                </div>
+            </div>
+
+            <!-- <div class="bar js">
+                <div class="head4"><span >JavaScript</span>
+                    <span class="percent">80%</span>
+                </div>
+                <div class="info"><span></span>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="box">
+            <h3>I currently take on freelance opportunities.</h3>
+            <p class="content"><strong><em>Have an exciting project where you need some help? Send me over a message, and let's chat.</strong></em></p>
+            <a class="button" href="mailto:sowmiloganathan2803@gmail.com" >HIRE ME</a>
+
+        </div>
+
+    </div>
+
+     <div id="contact" class="footer">
+         <a href="https://www.linkedin.com/in/sowmiya-loganathan-3a8944210">
+        <i class="fab fa-linkedin-in ln"></i>
+    </a>
+        <a href="https://twitter.com/SOWMIYALOGANAT5?s=08">
+        <i class="fab fa-twitter twtr"></i>
+    </a>
+        <a href="https://www.facebook.com/unique.sowmi.3">
+        <i class="fab fa-facebook-f fb"></i>
+    </a>
+        <a href=" https://www.instagram.com/invites/contact/?i=1vvuwpjrvi08n&utm_content=hz5abhg">
+        <i class="fab fa-instagram insta"></i>
+    </a>
+        <a href="mailto:sowmiloganathan2803@gmail.com">
+        <i class="far fa-envelope gmail"></i>
+    </a>
+
+        <p id="copyright"><em><strong>© 2021 Sowmiya Loganathan. All rights reserved.</strong></em></p>
+    </div>
+
+    </div>
+
+
+    <script>
+        var icon=document.getElementById("icon");
+
+        icon.onclick=function(){
+            document.body.classList.toggle("white-theme");
+            if(document.body.classList.contains("white-theme")){
+                icon.src="images/moon.png";
+            }
+            else{
+                icon.src="images/sun.png";
+            }
+
+        }
+
+        </script>
+
+
+    </body>
+</html>

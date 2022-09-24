@@ -1,0 +1,89 @@
+/* adjusting website according to sreensize */
+
+@media screen and (max-width:480px){
+body{
+    text-align: center;
+} 
+.profile{ 
+        height: 300px;
+        float: none;
+        padding: 100px 0 0 30px;
+        transition:transform .5s;
+}
+.profile:hover{
+        transform:scale(1.2);
+}   
+
+.menu-list{
+    display:none
+}
+.menu-list:nth-child(5):nth-child(6){
+    display:block;
+}
+
+.name{ 
+        font-size: 1.5rem; 
+}
+.name .span2{
+        color:#f9004d;
+        font-size: 1.5rem;
+}
+    
+.name span{
+    font-size: 2rem;
+}
+.name .span1{
+    font-size: 2rem;
+    color:#f9004d;
+}
+.image{ 
+    height:150px;
+    width:150px;
+    border-radius: 300px;
+    margin: 20px auto;
+}   
+.description{
+    width:100%;
+} 
+.homie{
+    display: none;
+} 
+.effect{
+    display: none;
+}  
+.skills-section{
+    width:50%;
+    font-weight: lighter;
+    
+}
+.info span{
+    display: none;
+}
+.percent {
+    display: none;
+}
+.info {
+    display: none;
+}
+.box{
+    width:70%;
+    font-size: 1 rem;
+}
+.footer{
+    width:70%;
+}
+.footer i{
+    margin: 30px 15px 15px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+    }
+    
